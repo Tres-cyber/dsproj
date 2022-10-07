@@ -1,0 +1,40 @@
+.nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-bar__logo{
+    font-size: 1.5rem;
+}
+.nav-bar__logo, .nav-bar__links__anchor{
+    color: black;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: 800;
+}
+
+.nav-bar__menu{
+    height: 1.5rem;
+}
+
+.nav-bar__links{
+    display: none;
+    
+}
+.nav-bar__links__anchor{
+    margin-left: 4rem;
+}
+
+@media(min-width: 768px){
+    .nav-bar__links{
+        display: flex;
+    }
+    .nav-bar__menu{
+        display: none;
+    }
+    .nav-bar__logo{
+        font-size: 2.5rem;
+    }
+}
+
