@@ -1,5 +1,7 @@
 import { useState, FunctionComponent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./nav-bar.css";
 
@@ -11,9 +13,9 @@ export const NavBar: FunctionComponent<{}> = function () {
 
   return (
     <nav className="nav-bar container">
-      <a href="#" className="nav-bar__logo">
+      <Link to="/home" className="nav-bar__logo">
         oli
-      </a>
+      </Link>
       <FontAwesomeIcon
         className={"nav-bar__menu" + (active ? "--active" : "")}
         onClick={toggleActive}
@@ -21,19 +23,19 @@ export const NavBar: FunctionComponent<{}> = function () {
       />
       <ul className="nav-bar__links">
         <li className="nav-bar__links__page">
-          <a href="#" className="nav-bar__links__page__link">
+          <Link to="/home" className="nav-bar__links__page__link">
             home
-          </a>
+          </Link>
         </li>
         <li className="nav-bar__links__page">
-          <a href="#" className="nav-bar__links__page__link">
+          <Link to="/lesson" className="nav-bar__links__page__link">
             lesson
-          </a>
+          </Link>
         </li>
         <li className="nav-bar__links__page">
-          <a href="#" className="nav-bar__links__page__link">
+          <Link to="/about" className="nav-bar__links__page__link">
             about
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
