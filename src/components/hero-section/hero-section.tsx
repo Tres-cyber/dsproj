@@ -21,7 +21,7 @@ export const HeroSection: FunctionComponent<{}> = function () {
         </p>
       </div>
       <div className="hero__image">
-        <img src="https://via.placeholder.com/450.png" alt="Animation" className="hero__image__image"/>
+        <img src="https://via.placeholder.com/240.png?text=hero+image" alt="Animation" className="hero__image__image"/>
       </div>
     </section>
   );

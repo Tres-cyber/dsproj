@@ -12,6 +12,7 @@
     text-transform: uppercase;
     font-family: var(--font);
     font-weight: 800;
+    text-decoration: none;
 }
 
 .nav-bar__menu{
@@ -20,6 +21,7 @@
 
 .nav-bar__links{
     display: none;
+    list-style: none;
     
 }
 .nav-bar__links__anchor{
