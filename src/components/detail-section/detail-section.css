@@ -82,7 +82,7 @@
     .detail{
         padding: 0 0 4rem 0;
     }
-    .details::after{
+    .detail::after{
         width: 100%;
     }
     .detail__logo__image{
