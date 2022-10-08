@@ -4,6 +4,8 @@
   --accent-color-1: #e7a825;
   --accent-color-2: #326ee9;
   --accent-color-3: #d4423f;
+  --accent-color-4: #D1CCCC;
+
 }
 
 *,
@@ -11,8 +13,6 @@
 *::before {
   padding: 0;
   margin: 0;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
 
