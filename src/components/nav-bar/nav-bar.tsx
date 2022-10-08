@@ -20,18 +20,18 @@ export const NavBar: FunctionComponent<{}> = function () {
         icon={faBars}
       />
       <ul className="nav-bar__links">
-        <li>
-          <a href="#" className="nav-bar__links__anchor">
+        <li className="nav-bar__links__page">
+          <a href="#" className="nav-bar__links__page__link">
             home
           </a>
         </li>
-        <li>
-          <a href="#" className="nav-bar__links__anchor">
+        <li className="nav-bar__links__page">
+          <a href="#" className="nav-bar__links__page__link">
             lesson
           </a>
         </li>
-        <li>
-          <a href="#" className="nav-bar__links__anchor">
+        <li className="nav-bar__links__page">
+          <a href="#" className="nav-bar__links__page__link">
             about
           </a>
         </li>
