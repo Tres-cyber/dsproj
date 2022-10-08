@@ -17,7 +17,8 @@
   text-decoration: none;
 }
 
-.nav-bar__menu {
+.nav-bar__menu,
+.nav-bar__menu--active {
   height: 1.5rem;
 }
 
@@ -34,7 +35,9 @@
   .nav-bar__links {
     display: flex;
   }
-  .nav-bar__menu {
+
+  .nav-bar__menu,
+  .nav-bar__menu--active {
     display: none;
   }
   .nav-bar__logo {

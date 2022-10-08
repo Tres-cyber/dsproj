@@ -1,4 +1,5 @@
-import { useState, FunctionComponent } from "react";
+import { useState, useEffect, FunctionComponent } from "react";
+import { useMediaQuery } from "@react-hook/media-query";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
@@ -7,6 +8,15 @@ import "./nav-bar.css";
 
 export const NavBar: FunctionComponent<{}> = function () {
   const [active, setActive] = useState<boolean>(false);
+  const isTabletView = useMediaQuery("(min-width: 768px)");
+
+  useEffect(
+    function () {
+      if (isTabletView) setActive(false);
+    },
+    [isTabletView]
+  );
+
   const toggleActive = () => {
     setActive((a) => !a);
   };
