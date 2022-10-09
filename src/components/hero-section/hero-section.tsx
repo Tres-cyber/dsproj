@@ -8,9 +8,9 @@ export const HeroSection: FunctionComponent<{}> = function () {
         <h1 className="hero__text__title">
           learning with <br />
           interactive <br />
-          <span className="hero__text__title__highlighted">
+          <mark className="hero__text__title__highlighted">
             problem-solving
-          </span>
+          </mark>
         </h1>
 
         <p className="hero__text__details">
@@ -21,7 +21,11 @@ export const HeroSection: FunctionComponent<{}> = function () {
         </p>
       </div>
       <div className="hero__image">
-        <img src="https://via.placeholder.com/240.png?text=hero+image" alt="Animation" className="hero__image__image"/>
+        <img
+          src="https://via.placeholder.com/240.png?text=hero+image"
+          alt="Animation"
+          className="hero__image__image"
+        />
       </div>
     </section>
   );
