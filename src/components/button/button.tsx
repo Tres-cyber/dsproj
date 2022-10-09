@@ -15,9 +15,8 @@ export const Button: FunctionComponent<ButtonProps> = function (props) {
   return (
     <button
       className={
-        props.className
-          ? props.className + " button"
-          : "button" + (props.active ? "--active" : "")
+        (props.className ? props.className + " button" : "button") +
+        (props.active ? "--active" : "")
       }
       style={style}
     >
