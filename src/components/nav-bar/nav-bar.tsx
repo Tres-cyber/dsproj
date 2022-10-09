@@ -2,8 +2,8 @@ import { useState, useEffect, FunctionComponent } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./nav-bar.css";
 
 export const NavBar: FunctionComponent<{}> = function () {
@@ -29,7 +29,7 @@ export const NavBar: FunctionComponent<{}> = function () {
       <FontAwesomeIcon
         className={"nav-bar__menu" + (active ? "--active" : "")}
         onClick={toggleActive}
-        icon={faBars}
+        icon={active ? faXmark : faBars}
       />
       <ul className="nav-bar__links">
         <li className="nav-bar__links__page">
