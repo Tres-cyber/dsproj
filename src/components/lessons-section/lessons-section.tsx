@@ -1,11 +1,23 @@
-import { FunctionComponent } from "react";
+import { useState, useEffect, FunctionComponent } from "react";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../../components";
+import { Link } from "react-router-dom";
 
 import "./lessons-section.css";
+import { useMediaQuery } from "@react-hook/media-query";
 
 export const LessonsSection: FunctionComponent<{}> = function () {
+  const isTabletView = useMediaQuery("(min-width: 768px)");
+  const [active, setActive] = useState<number>(0);
+
+  useEffect(
+    function () {
+      if (isTabletView) setActive(0);
+    },
+    [isTabletView]
+  );
+
   const lessons = [
     {
       title: "Lesson 1",
@@ -38,35 +50,44 @@ export const LessonsSection: FunctionComponent<{}> = function () {
       <nav className="lessons__tab container">
         {lessons.map(({ title }, index) => (
           <Button
-            active
+            active={active == index}
             className="lessons__tab__buttons"
             color={`var(--accent-color-${(index % 3) + 1}`}
+            onClick={() => {
+              setActive(index);
+            }}
           >
             {title}
           </Button>
         ))}
       </nav>
 
-      {lessons.map(({ title, description, image }) => (
-        <div className="lessons__lesson container">
-          <div className="lessons__lesson__summary">
-            <h1 className="lessons__lesson__summary__title">{title}</h1>
-            <p className="lessons__lesson__summary__description">
-              {description}
-            </p>
-            <a href="#" className="lessons__lesson__summary__link">
-              Learn more <FontAwesomeIcon icon={faRightLong} />
-            </a>
-          </div>
-          <div className="lessons__lesson__image">
-            <img
-              className="lessons__lesson__image__image"
-              src={image}
-              alt={"sample animation for " + title}
-            />
-          </div>
-        </div>
-      ))}
+      {lessons.map(
+        ({ title, description, image }, index) =>
+          (isTabletView || active == index) && (
+            <div className="lessons__lesson container">
+              <div className="lessons__lesson__summary">
+                <h1 className="lessons__lesson__summary__title">{title}</h1>
+                <p className="lessons__lesson__summary__description">
+                  {description}
+                </p>
+                <Link
+                  to={`/lesson/${index + 1}`}
+                  className="lessons__lesson__summary__link"
+                >
+                  Learn more <FontAwesomeIcon icon={faRightLong} />
+                </Link>
+              </div>
+              <div className="lessons__lesson__image">
+                <img
+                  className="lessons__lesson__image__image"
+                  src={image}
+                  alt={"sample animation for " + title}
+                />
+              </div>
+            </div>
+          )
+      )}
     </section>
   );
 };

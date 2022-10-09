@@ -1,4 +1,4 @@
-import { FunctionComponent, CSSProperties } from "react";
+import { FunctionComponent, CSSProperties, MouseEventHandler } from "react";
 
 import "./button.css";
 
@@ -7,6 +7,7 @@ type ButtonProps = {
   children?: string;
   className?: string;
   active?: boolean;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
 export const Button: FunctionComponent<ButtonProps> = function (props) {
@@ -19,6 +20,7 @@ export const Button: FunctionComponent<ButtonProps> = function (props) {
         (props.active ? "--active" : "")
       }
       style={style}
+      onClick={props.onClick}
     >
       {props.children}
     </button>
