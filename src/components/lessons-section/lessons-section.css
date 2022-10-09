@@ -1,0 +1,72 @@
+.lessons__lesson {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.lessons__tab {
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.lessons__lesson__summary {
+  font-family: var(--font);
+  order: 2;
+}
+
+.lessons__lesson__summary__title {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.lessons__lesson__summary__description {
+  margin-bottom: 1.5rem;
+}
+
+.lessons__lesson__summary__link {
+  color: var(--accent-color-2);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.lessons__lesson__image {
+  order: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lessons__lesson__summary {
+  width: 83.33%;
+}
+
+.lessons__lesson__image__image {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .lessons__tab {
+    display: none !important;
+  }
+
+  .lessons__lesson {
+    margin-top: 4rem !important;
+  }
+
+  .lessons__lesson__summary {
+    order: 1;
+    width: 33.33%;
+  }
+
+  .lessons__lesson__image {
+    order: 2;
+    width: 45%;
+  }
+
+  .lessons__lesson__image__image {
+    width: 75%;
+  }
+}
