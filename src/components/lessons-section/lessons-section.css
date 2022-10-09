@@ -7,6 +7,7 @@
 }
 
 .lessons__tab {
+  margin-top: 2rem !important;
   padding: 1rem;
   gap: 1rem;
 }
