@@ -12,12 +12,10 @@ export const HeroSection: FunctionComponent<{}> = function () {
             problem-solving
           </mark>
         </h1>
-
         <p className="hero__text__details">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          doloremque quidem quaerat, omnis quos minima. Soluta modi maiores,
-          doloremque eius laborum, illum alias, quam ab delectus deleniti vel
-          ducimus dolorum!
+          For visual and interactive learner. Learn number theory topics using
+          animated examples and interactive calculators rather than lifeless
+          handouts and boring lecture notes. Absolutely for free!
         </p>
       </div>
       <div className="hero__image">

@@ -19,22 +19,26 @@ export const DetailSection: FunctionComponent<{}> = function () {
         <div className="detail__description__meaning">
           <h2 className="detail__description__meaning__title">open-source</h2>
           <p className="detail__description__meaning__par">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
-            eligendi quo error provident, in architecto!
+            Learn without paying or registering. It is free and open. You could
+            view and contribute to the source code at{" "}
+            <a href="https://github.com/Tres-cyber/dsproj" target="_blank">
+              this repository.
+            </a>
           </p>
         </div>
         <div className="detail__description__meaning">
           <h2 className="detail__description__meaning__title">learning</h2>
           <p className="detail__description__meaning__par">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            impedit assumenda ad quam nihil ex!
+            Learn introductory number theory topics with fun interactive lesson
+            and calculators for more dynamic examples.
           </p>
         </div>
         <div className="detail__description__meaning">
           <h2 className="detail__description__meaning__title">instructions</h2>
           <p className="detail__description__meaning__par">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consectetur quaerat similique, magnam assumenda nobis totam
+            Lessons are terse, condense, and straight to the point without fancy
+            jargons and unnecessary information while still being as instructive
+            as possible.
           </p>
         </div>
       </div>

@@ -79,6 +79,11 @@
   margin-bottom: 3rem;
 }
 
+.detail__description__meaning__par a {
+  color: var(--accent-color-2);
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .detail {
     padding: 0 0 4rem 0;

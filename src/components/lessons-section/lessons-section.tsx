@@ -1,4 +1,4 @@
-import { useState, useEffect, FunctionComponent } from "react";
+import { useState, FunctionComponent } from "react";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../../components";
@@ -11,36 +11,29 @@ export const LessonsSection: FunctionComponent<{}> = function () {
   const isTabletView = useMediaQuery("(min-width: 768px)");
   const [active, setActive] = useState<number>(0);
 
-  useEffect(
-    function () {
-      if (isTabletView) setActive(0);
-    },
-    [isTabletView]
-  );
-
   const lessons = [
     {
-      title: "Lesson 1",
+      title: "Divisibility",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum minima error eligendi! Sunt, dolorem.",
+        "Learn about the basic properties of divisibility, divisibility rules, and the divisibility theorem.",
       image: "https://via.placeholder.com/450/E7A825/000?text=Lesson+1+Image",
     },
     {
-      title: "Lesson 2",
+      title: "Primes and Composite",
       description:
-        "Earum vero cumque vitae eligendi repellendus doloribus cum, corporis suscipit sit iste fugiat laudantium nostrum!",
+        "Differentiate between prime and composite and how composite number can be uniquely represented as product of primes",
       image: "https://via.placeholder.com/450/326EE9/000?text=Lesson+2+Image",
     },
     {
-      title: "Lesson 3",
+      title: "Patterns in Primes",
       description:
-        "Ad, ipsa doloribus sint pariatur aliquam, praesentium dicta natus alias, velit sequi cupiditate quidem nemo.",
+        "Explore patterns of prime numbers and show multiple ways of generating prime numbers",
       image: "https://via.placeholder.com/450/D4423F/000?text=Lesson+3+Image",
     },
     {
-      title: "Lesson 4",
+      title: "Common Divisors and Multiple",
       description:
-        "Dolore reprehenderit deleniti fuga sed cumque non atque ex. Illum aut dolorum excepturi sint veritatis. ",
+        "Revisit the elementary topic of common divisors and common multiple and discuss its connection with prime numbers",
       image: "https://via.placeholder.com/450/E7A825/000?text=Lesson+4+Image",
     },
   ];

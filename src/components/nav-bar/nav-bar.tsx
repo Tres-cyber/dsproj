@@ -39,7 +39,7 @@ export const NavBar: FunctionComponent<{}> = function () {
         </li>
         <li className="nav-bar__links__page">
           <Link to="/lesson" className="nav-bar__links__page__link">
-            lesson
+            lessons
           </Link>
         </li>
         <li className="nav-bar__links__page">
