@@ -1,0 +1,29 @@
+.lesson-body {
+  padding: 1rem;
+  font-family: var(--font);
+}
+
+.lesson-body blockquote {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--gray-color-2);
+  padding: 0 3rem 0 2rem;
+  position: relative;
+}
+
+.lesson-body > :first-child {
+  margin-top: 0 !important;
+}
+
+.lesson-body > * {
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1em;
+}
+
+.lesson-body blockquote::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  border-right: 4px solid var(--gray-color-1);
+  left: 1rem;
+  top: 0;
+}

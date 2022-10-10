@@ -2,6 +2,7 @@ import { HomePage, Lesson1, Lesson2, Lesson3, Lesson4 } from "./pages";
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import "./index.css";
+import "katex/dist/katex.min.css";
 
 function App() {
   return (
