@@ -4,6 +4,7 @@ import {
   HeroSection,
   DetailSection,
   LessonsSection,
+  Footer,
 } from "../../components";
 
 export const HomePage: FunctionComponent<{}> = function () {
@@ -13,6 +14,7 @@ export const HomePage: FunctionComponent<{}> = function () {
       <HeroSection />
       <DetailSection />
       <LessonsSection />
+      <Footer />
     </>
   );
 };
