@@ -1,4 +1,7 @@
 import { useState, FunctionComponent } from "react";
+import { NumberInput } from "../../components";
+
+import "./prime-factor-calculator.css";
 
 function humanizeFactor(fac: number[]) {
   let lastFac = 1;
@@ -40,15 +43,19 @@ const PrimeFactor: FunctionComponent<{ num: number }> = function (props) {
 
   return (
     <>
-      <table>
+      <table className="prime-factor-calculator__division">
         {division.map(({ fact, num }) => (
           <tr>
-            <td>{fact == num ? "" : fact}</td>
-            <td>{num}</td>
+            <td className="prime-factor-calculator__division__factor">
+              {fact == num ? "" : fact}
+            </td>
+            <td className="prime-factor-calculator__division__quotient">
+              {num}
+            </td>
           </tr>
         ))}
       </table>
-      <output>
+      <output className="prime-factor-calculator__factors">
         {props.num} ={" "}
         {humanizeFactor(division.map((div) => div.fact)).map(
           ({ prime, exp }, i) => (
@@ -68,18 +75,9 @@ export const PrimeFactorCalculator: FunctionComponent<{}> = function () {
   const [num, setNum] = useState<number>(1);
 
   return (
-    <>
-      <input
-        type="number"
-        min={2}
-        max={512}
-        step={1}
-        defaultValue={1}
-        onChange={(e) => {
-          setNum(Number.parseInt(e.target.value));
-        }}
-      />
+    <div className="prime-factor-calculator">
+      <NumberInput min={2} max={512} step={1} default={2} value={setNum} />
       {Number.isNaN(num) || <PrimeFactor num={num} />}
-    </>
+    </div>
   );
 };

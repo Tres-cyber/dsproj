@@ -8,7 +8,7 @@ type LessonBodyProps = {
 
 export const LessonBody: FunctionComponent<LessonBodyProps> = function (props) {
   return (
-    <div className="-body container">
+    <div className="container">
       <main className="lesson-body">{props.children}</main>
     </div>
   );

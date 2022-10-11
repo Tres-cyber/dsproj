@@ -23,12 +23,7 @@ export const DivisibilityCalculator: FunctionComponent<{}> = function () {
       {valid ? (
         <>
           {dividend % divisor == 0 ? DIVIDES_SYMBOL : NOT_DIVIDES_SYMBOL}
-          <NumberInput
-            step={1}
-            valid={(n) => n != 0}
-            default={1}
-            value={setDividend}
-          />{" "}
+          <NumberInput step={1} default={1} value={setDividend} />{" "}
         </>
       ) : (
         "is not valid a Divisor "

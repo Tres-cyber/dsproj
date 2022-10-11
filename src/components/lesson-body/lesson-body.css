@@ -1,7 +1,7 @@
 .lesson-body {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem 1rem;
   font-family: var(--font);
 }
 
@@ -28,4 +28,33 @@
   border-right: 4px solid var(--gray-color-1);
   left: 1rem;
   top: 0;
+}
+
+.lesson-body ol {
+  counter-reset: item;
+  padding: 0 3rem 0 4rem;
+}
+
+.lesson-body ol li {
+  display: block;
+  position: relative;
+}
+
+.lesson-body ol li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: var(--gray-color-2);
+  position: absolute;
+  right: calc(100% + 1rem);
+}
+
+.lesson-body ol.centered li::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .lesson-body {
+    padding: 4rem 1rem;
+  }
 }
