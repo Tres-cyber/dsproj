@@ -54,20 +54,12 @@
 .lesson-description__graphics__controls {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .lesson-description__graphics__controls__prev,
 .lesson-description__graphics__controls__next {
   width: 40%;
-}
-
-.lesson-description__graphics__controls__prev:only-child {
-  margin-right: auto;
-}
-
-.lesson-description__graphics__controls__next:only-child {
-  margin-left: auto;
 }
 
 @media (min-width: 768px) {

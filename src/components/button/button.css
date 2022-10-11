@@ -19,3 +19,11 @@
 .button--active {
   background-color: var(--button-color);
 }
+
+.button--active:disabled,
+.button:disabled {
+  color: var(--gray-color-2);
+  transform: translateX(3px) translateY(3px);
+  box-shadow: 1px 1px 0px 1px var(--gray-color-1);
+  border-color: var(--gray-color-1);
+}

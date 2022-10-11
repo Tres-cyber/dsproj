@@ -6,3 +6,4 @@ export * from "./lesson-body";
 export * from "./lesson-description";
 export * from "./lessons-section";
 export * from "./nav-bar";
+export * from "./number-input";

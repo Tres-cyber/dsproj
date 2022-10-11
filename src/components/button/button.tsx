@@ -7,6 +7,7 @@ type ButtonProps = {
   children?: string;
   className?: string;
   active?: boolean;
+  disabled?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
@@ -21,6 +22,7 @@ export const Button: FunctionComponent<ButtonProps> = function (props) {
       }
       style={style}
       onClick={props.onClick}
+      disabled={props.disabled}
     >
       {props.children}
     </button>

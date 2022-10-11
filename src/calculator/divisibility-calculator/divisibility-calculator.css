@@ -1,0 +1,7 @@
+.divisibility-calculator {
+  display: flex;
+  align-self: center;
+  gap: 2rem;
+  font-size: 2rem;
+  font-family: var(--font);
+}

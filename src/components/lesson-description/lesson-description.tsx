@@ -36,28 +36,26 @@ export const LessonDescription: FunctionComponent<LessonDescriptionProp> =
         <div className="lesson-description__graphics">
           {props.image}
           <div className="lesson-description__graphics__controls">
-            {props.index != 1 && (
-              <Button
-                color="transparent"
-                className="lesson-description__graphics__controls__prev"
-                onClick={() => {
-                  navigate(`../${props.index - 1}`);
-                }}
-              >
-                Previous
-              </Button>
-            )}
-            {props.index != 4 && (
-              <Button
-                color="transparent"
-                className="lesson-description__graphics__controls__next"
-                onClick={() => {
-                  navigate(`../${props.index + 1}`);
-                }}
-              >
-                Next
-              </Button>
-            )}
+            <Button
+              color="transparent"
+              className="lesson-description__graphics__controls__prev"
+              disabled={props.index == 1}
+              onClick={() => {
+                navigate(`../${props.index - 1}`);
+              }}
+            >
+              Previous
+            </Button>
+            <Button
+              color="transparent"
+              className="lesson-description__graphics__controls__next"
+              disabled={props.index == 4}
+              onClick={() => {
+                navigate(`../${props.index + 1}`);
+              }}
+            >
+              Next
+            </Button>
           </div>
         </div>
       </section>
