@@ -1,10 +1,15 @@
-import { FunctionComponent, CSSProperties, MouseEventHandler } from "react";
+import {
+  FunctionComponent,
+  CSSProperties,
+  MouseEventHandler,
+  ReactNode,
+} from "react";
 
 import "./button.css";
 
 type ButtonProps = {
   color: string;
-  children?: string;
+  children?: ReactNode;
   className?: string;
   active?: boolean;
   disabled?: boolean;

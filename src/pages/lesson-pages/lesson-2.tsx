@@ -33,7 +33,7 @@ export const Lesson2: FunctionComponent<{}> = function () {
           <TeX>p</TeX> is a composite number.
         </blockquote>
         <p>
-          Prime numbers are numbers that can be divided by number other than
+          Prime numbers are numbers that cant be divided by number other than
           itself and 1.
         </p>
         <h2>Prime Factorization</h2>

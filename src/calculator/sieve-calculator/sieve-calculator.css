@@ -1,0 +1,27 @@
+.sieve-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 2rem;
+}
+
+.sieve-calculator__output {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.sieve-calculator__output__table {
+  border: 1px solid black;
+  box-shadow: 3px 3px 0 1px;
+  border-collapse: collapse;
+}
+
+.sieve-calculator__output__table td {
+  border: 1px solid black;
+  padding: 0.25rem;
+  text-align: right;
+}

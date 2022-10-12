@@ -1,0 +1,26 @@
+.prime-factor-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  align-self: center;
+  font-family: var(--font);
+  font-size: 2rem;
+}
+
+.prime-factor-calculator__division {
+  border-collapse: collapse;
+}
+
+.prime-factor-calculator__division__quotient,
+.prime-factor-calculator__division__factor {
+  padding: 0.125rem 0.5rem;
+  line-height: 1em;
+}
+
+.prime-factor-calculator__division
+  tr:not(:last-child)
+  .prime-factor-calculator__division__quotient {
+  border-bottom: 2px solid var(--gray-color-2);
+  border-left: 2px solid var(--gray-color-2);
+}
