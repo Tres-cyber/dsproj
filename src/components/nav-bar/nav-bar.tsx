@@ -42,11 +42,6 @@ export const NavBar: FunctionComponent<{}> = function () {
             lessons
           </Link>
         </li>
-        <li className="nav-bar__links__page">
-          <Link to="/about" className="nav-bar__links__page__link">
-            about
-          </Link>
-        </li>
       </ul>
     </nav>
   );

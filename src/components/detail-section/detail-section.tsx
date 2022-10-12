@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import logoUrl from "../../assets/images/icon.png";
 import "./detail-section.css";
 
 export const DetailSection: FunctionComponent<{}> = function () {
@@ -9,11 +10,7 @@ export const DetailSection: FunctionComponent<{}> = function () {
           open-source <br /> learning <br />
           <u className="detail__logo__title__highlight">instructions</u>
         </h1>
-        <img
-          src="https://via.placeholder.com/240.png?text=logo"
-          alt="Animation"
-          className="detail__logo__image"
-        />
+        <img src={logoUrl} alt="Animation" className="detail__logo__image" />
       </div>
       <div className="detail__description">
         <div className="detail__description__meaning">

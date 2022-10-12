@@ -7,6 +7,11 @@ import { Link } from "react-router-dom";
 import "./lessons-section.css";
 import { useMediaQuery } from "@react-hook/media-query";
 
+import lesson1img from "../../assets/images/lesson1.png";
+import lesson2img from "../../assets/images/lesson2.png";
+import lesson3img from "../../assets/images/lesson3.png";
+import lesson4img from "../../assets/images/lesson4.png";
+
 export const LessonsSection: FunctionComponent<{}> = function () {
   const isTabletView = useMediaQuery("(min-width: 768px)");
   const [active, setActive] = useState<number>(0);
@@ -16,25 +21,25 @@ export const LessonsSection: FunctionComponent<{}> = function () {
       title: "Divisibility",
       description:
         "Learn about the basic properties of divisibility, divisibility rules, and the divisibility theorem.",
-      image: "https://via.placeholder.com/450/E7A825/000?text=Lesson+1+Image",
+      image: lesson1img,
     },
     {
       title: "Primes and Composite",
       description:
         "Differentiate between prime and composite and how composite number can be uniquely represented as product of primes",
-      image: "https://via.placeholder.com/450/326EE9/000?text=Lesson+2+Image",
+      image: lesson2img,
     },
     {
       title: "Patterns in Primes",
       description:
         "Explore patterns of prime numbers and show multiple ways of generating prime numbers",
-      image: "https://via.placeholder.com/450/D4423F/000?text=Lesson+3+Image",
+      image: lesson3img,
     },
     {
       title: "Common Divisors and Multiple",
       description:
         "Revisit the elementary topic of common divisors and common multiple and discuss its connection with prime numbers",
-      image: "https://via.placeholder.com/450/E7A825/000?text=Lesson+4+Image",
+      image: lesson4img,
     },
   ];
 

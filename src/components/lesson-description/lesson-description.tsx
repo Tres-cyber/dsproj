@@ -11,7 +11,7 @@ type LessonDescriptionProp = {
   title: string;
   description: string;
   summary: string[];
-  image?: ReactNode;
+  image?: string;
 };
 
 export const LessonDescription: FunctionComponent<LessonDescriptionProp> =
@@ -34,7 +34,10 @@ export const LessonDescription: FunctionComponent<LessonDescriptionProp> =
           ))}
         </div>
         <div className="lesson-description__graphics">
-          {props.image}
+          <img
+            src={props.image}
+            className="lesson-description__graphics__image"
+          />
           <div className="lesson-description__graphics__controls">
             <Button
               color="transparent"

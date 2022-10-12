@@ -12,6 +12,8 @@ import {
   DivisibilityTheoremCalculator,
 } from "../../calculator";
 
+import imgUrl from "../../assets/images/lesson1.png";
+
 export const Lesson1: FunctionComponent<{}> = function () {
   return (
     <>
@@ -23,9 +25,7 @@ export const Lesson1: FunctionComponent<{}> = function () {
         summary={[
           "Learn about the basic properties of divisibility, divisibility rules, and the divisibility theorem.",
         ]}
-        image={
-          <img src="https://via.placeholder.com/450/E7A825/000?text=Lesson+1+Image" />
-        }
+        image={imgUrl}
       />
       <LessonBody>
         <h1>Divisibility </h1>

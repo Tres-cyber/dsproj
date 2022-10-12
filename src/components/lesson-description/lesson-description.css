@@ -51,6 +51,11 @@
   color: var(--gray-color-2);
 }
 
+.lesson-description__graphics__image {
+  align-self: center;
+  width: 75%;
+}
+
 .lesson-description__graphics__controls {
   margin-top: 2rem;
   display: flex;

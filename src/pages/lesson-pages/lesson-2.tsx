@@ -9,6 +9,8 @@ import {
 
 import { PrimeFactorCalculator } from "../../calculator";
 
+import imgUrl from "../../assets/images/lesson2.png";
+
 export const Lesson2: FunctionComponent<{}> = function () {
   return (
     <>
@@ -20,9 +22,7 @@ export const Lesson2: FunctionComponent<{}> = function () {
         summary={[
           "Differentiate between prime and composite and how composite number can be uniquely represented as product of primes",
         ]}
-        image={
-          <img src="https://via.placeholder.com/450/326EE9/000?text=Lesson+2+Image" />
-        }
+        image={imgUrl}
       />
       <LessonBody>
         <h1>Primes and Composite</h1>

@@ -30,7 +30,7 @@ function leastFactor(n: number): number {
 export const SieveCalculator: FunctionComponent<{}> = function () {
   const [valid, setValid] = useState<boolean>(true);
   const [num, setNum] = useState<number>(90);
-  const cols = useMediaQuery("(min-width: 768px)") ? 15 : 10;
+  const cols = useMediaQuery("(min-width: 768px)") ? 10 : 6;
 
   const matrix = map2d(
     (x) => ({ n: x, f: leastFactor(x) }),
@@ -56,8 +56,8 @@ export const SieveCalculator: FunctionComponent<{}> = function () {
         <NumberInput
           int
           step={5}
-          min={10}
-          max={150}
+          min={6}
+          max={90}
           value={setNum}
           isValid={setValid}
           default={90}

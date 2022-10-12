@@ -9,6 +9,8 @@ import {
 
 import { SieveCalculator } from "../../calculator";
 
+import imgUrl from "../../assets/images/lesson3.png";
+
 export const Lesson3: FunctionComponent<{}> = function () {
   return (
     <>
@@ -20,9 +22,7 @@ export const Lesson3: FunctionComponent<{}> = function () {
         summary={[
           "There are infinite number of primes and infinite patterns accompanying it. Let us explore how big primes are generated in practical applications",
         ]}
-        image={
-          <img src="https://via.placeholder.com/450/D4423F/000?text=Lesson+3+Image" />
-        }
+        image={imgUrl}
       />
       <LessonBody>
         <h1>Patterns in Primes</h1>

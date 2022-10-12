@@ -49,7 +49,7 @@
 }
 
 .lessons__lesson__image__image {
-  width: 90%;
+  width: 75%;
 }
 
 @media (min-width: 768px) {

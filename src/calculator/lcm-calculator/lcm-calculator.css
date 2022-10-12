@@ -1,0 +1,31 @@
+.lcm-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  align-self: center;
+  font-size: 2rem;
+}
+
+.lcm-calculator__input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.lcm-calculator__solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lcm-calculator__solution__line__a {
+  color: var(--accent-color-1);
+}
+
+.lcm-calculator__solution__line__b {
+  color: var(--accent-color-2);
+}
+
+.lcm-calculator__solution__line__gcd {
+  color: var(--accent-color-3);
+}
